@@ -1,0 +1,22 @@
+# Site settings
+title: jay pinho
+email: jaypinho@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  data.tech.media.politics.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://blog.jaypinho.com" # the base hostname & protocol for your site
+twitter_username: jaypinho
+github_username:  jaypinho
+timezone: America/New_York
+paginate: 5
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Jay Pinho"
+
+# Build settings
+markdown: kramdown
