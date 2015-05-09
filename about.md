@@ -4,8 +4,10 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+Welcome to the redesigned [jaypinho.com](http://jaypinho.com).
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
+If you're looking for [The First Casualty](http://archives.jaypinho.com), you can now find it at [archives.jaypinho.com](http://archives.jaypinho.com). While I may or may not resurrect TFC at some point in the future, I wanted to start afresh with jaypinho.com, where I will continue to write and produce various content going forward.
 
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+I invite you to look around, [let me know](https://twitter.com/jaypinho) what you think, and share the site with your friends.
+
+Thanks for visiting.
