@@ -18,6 +18,7 @@ defaults:
     values:
       layout: "post"
       author: "Jay Pinho"
+      comments: true
 
 # Build settings
 markdown: kramdown
