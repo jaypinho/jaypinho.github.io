@@ -2,7 +2,7 @@
 title:  "Metering my news consumption"
 excerpt: "Part 1 of an n-part series on the creation of Newsmeter."
 date:   2015-05-10 16:25:00
-tags: news journalism reading
+tags: news journalism reading newsmeter
 ---
 Two months ago I began working on a software project I dubbed Newsmeter.
 
