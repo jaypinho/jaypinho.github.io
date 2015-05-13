@@ -1,6 +1,6 @@
 ---
 title:  "Musical interlude"
-excerpt: "Bringing back the 2 AM Tune."
+excerpt: "Bringing back the 2 A.M. Tune."
 date:   2015-05-13 15:50:00
 tags: music
 ---
