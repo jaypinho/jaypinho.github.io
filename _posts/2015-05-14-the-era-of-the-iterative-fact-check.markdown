@@ -1,0 +1,27 @@
+---
+title:  "The era of the iterative fact check"
+excerpt: "One man's correction is another's lede."
+date:   2015-05-14 13:04:00
+tags: news journalism fact-checking seymour hersh
+---
+This past Sunday, Seymour Hersh -- a man whose name, in print, is nearly always preceded with some variant of the phrase 'legendary journalist' or 'Pulitzer winner' -- published a piece for <em>The London Review of Books</em> titled ['The Killing of Osama bin Laden.'](http://www.lrb.co.uk/v37/n10/seymour-m-hersh/the-killing-of-osama-bin-laden)
+
+The story alleged that the official account of the al-Qaida leader's fatal demise in 2011 was largely fabricated: the Pakistanis had known of bin Laden's whereabouts for years, the U.S. had discovered his location via a walk-in snitch, bin Laden was unarmed when he was killed and no firefight took place, the Pakistanis were warned in advance of the American assassination operation, and so on. It's a lot to digest at once, and at 10,000 words it takes awhile to do so as well.
+
+Almost immediately, criticism emerged. Remarkably, the loudest critics were not primarily concerned with the politics or the ideology of the piece -- at least, those were not the publicly stated reasons -- but with its factual accuracy. (Hersh likely hurt his case via his [strangely defensive interview](http://www.slate.com/articles/news_and_politics/foreigners/2015/05/seymour_hersh_interview_on_his_bin_laden_story_the_new_yorker_journalism.single.html) with <em>Slate</em>'s Isaac Chotiner.)
+
+<em>Vox</em> ran a piece called ['The many problems with Seymour Hersh's Osama bin Laden conspiracy theory'](http://www.vox.com/2015/5/11/8584473/seymour-hersh-osama-bin-laden). Bobby Ghosh over at <em>Quartz</em> zeroed in on the question 'why?' in an article titled ['One question Seymour Hersh never answers in his alt-history of the killing of Osama bin Laden'](http://qz.com/402375/one-question-seymour-hersh-never-answers-in-his-alt-history-of-the-killing-of-osama-bin-laden/). Perhaps most damningly, <em>The New York Times</em> ran an article called ['The Detail in Seymour Hersh's Bin Laden Story That Rings True.'](http://www.nytimes.com/2015/05/12/magazine/the-detail-in-seymour-hershs-bin-laden-story-that-rings-true.html)
+
+The general thrust of these pieces is evident from the phrasing in the headlines: 'conspiracy theory,' 'alt-history,' and 'the detail...that rings true.' None of these represents favorable framing, from the standpoint of the subject, and Hersh's journalistic reputation has certainly suffered in the past few years. But what these and similar critiques of Hersh's piece share, most importantly, is a premise that's relatively new to the world of journalism: the assumption that facts in a published mainstream news story are inherently debatable.
+
+This may seem unremarkable, but is actually quite a rupture from the traditional view of mainstream news. From the days of Edward Murrow and Walter Cronkite on TV to their iconic counterparts in print -- Bob Woodward and Carl Bernstein spring to mind -- 'the news' has always been the end result, a destination. <em>The New York Times</em> was an agenda-setter, a conversation-starter even, and news in all its mainstream forms was thought of as essentially definitive. If it was on the 6 PM news, then it happened.
+
+So it is really a bit startling to see someone -- especially a reporter with the journalistic cachet that Hersh enjoys -- write a piece for a reputable publication and then watch it slowly picked apart <em>not as an aberration or outlier</em> but as if this is a perfectly normal reaction to a reported story.
+
+Of course, the gradual decline of Hersh's influence over the past several years, as well as the apparent fact that his first choice for the Bin Laden piece, <em>The New Yorker</em>, more or less passed on it, both helped open the door to widespread skepticism. But even if published by a more traditional news organization -- the <em>Times</em>, say, or <em>The Wall Street Journal</em> -- my guess is we'd still have seen fairly vigorous pushback given the piece's heavy reliance on an anonymous source.
+
+There are two ways to process this relatively recent phenomenon, each of which leads to significantly divergent conclusions. The negative angle is that news stories are seen as the start, not the end, of any investigation nowadays because journalistic credibility has been gravely eroded, public trust is nearly nonexistent, and journalists are increasingly careless in the rush to beat the competition and collect page views.
+
+The glass-half-full view is that, in all likelihood, reporters have been getting facts wrong for ages. There was just no one with the distributional infrastructure to get the word out about it. Thanks to the Internet's democratizing influence, the truth is being arrived at faster, and more often, now than ever before. Yay!
+
+Boringly enough, I think both are true. And indeed, there is interplay between the two developments as well: the same distributional infrastructure (simpler translation: the Internet) that allows for mass fact-checking is perhaps also the greatest facilitator of the poor research and page view-centric thinking that creates shoddy reporting in the first place. Consuming news in this era presents the ultimate <em>caveat emptor</em>: the true story has been written somewhere. The tricky part is figuring out which one it is.
