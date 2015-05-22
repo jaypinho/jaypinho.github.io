@@ -104,7 +104,7 @@ All of these questions will have to be answered over time, and they're very much
 
 #### Access levels
 
-What will it even mean to be friends with someone on Newsmeter? How many different levels of access will there be? Will there be a setting allowing friends of mine to view every single new story I've browsed since I started using the site? Just generalized stats? Something in between?
+What will it even mean to be friends with someone on Newsmeter? How many different levels of access will there be? Will there be a setting allowing friends of mine to view every single news story I've browsed since I started using the site? Just generalized stats? Something in between?
 
 #### Conclusion
 
