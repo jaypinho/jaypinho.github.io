@@ -1,7 +1,7 @@
 ---
 title:  "Those unruly Greeks, part 2"
-excerpt: "The IMF throws everyone for a loop ahead of tomorrow's referendum."
-date:   2015-07-03 16:30:00
+excerpt: "The IMF throws everyone for a loop ahead of Sunday's referendum."
+date:   2015-07-03 16:33:00
 tags: greece alexis tsipras yanis varoufakis imf
 ---
 On Tuesday I wrote [a short post]({% post_url 2015-06-30-those-unruly-greeks %}) detailing my frustrations with the general tone of coverage of Greek prime minister Alexis Tsipras and finance minister Yanis Varoufakis. Both of them have been unfairly castigated as radicals or utopians. Worse yet, the journalists and others doing the castigating in many cases freely acknowledge the fundamental reasonableness of Greek policy positions.
@@ -25,4 +25,4 @@ And Varoufakis was [similarly triumphant](http://yanisvaroufakis.eu/2015/07/03/i
 
 > Debt relief ought to be at the centre of negotiations over a New Deal for Greece. That has been our government’s mantra from 26th of January, our first day on the job. Exactly five months later, on 26th of June, the IMF has conceded the point (as evidenced earlier today by the NYT) – on the very day Prime Minister Alexis Tsipras called for a referendum so that the Greek people could reject an IMF-led proposal that offered no… debt relief.
 
-My guess is we'll see the Yes vote eke out a win tomorrow, but for everyone's sakes I'm rooting for No.
+My guess is we'll see the Yes vote eke out a win on Sunday, but for everyone's sakes I'm rooting for No.
