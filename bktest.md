@@ -10,3 +10,7 @@ permalink: /bktest/
 bk_doJSTag(26881, 4);
 </script>
 <!-- End BlueKai Tag -->
+
+<!-- Begin ID Swap Tag-->
+<img height="1" width="1" src="http://tags.bluekai.com/site/26881?redir=http%3A%2F%2Fblog.jaypinho.com%3Fbk_uuid%3D$_BK_UUID"/>
+<!-- End ID Swap Tag-->
