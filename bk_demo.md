@@ -58,15 +58,15 @@ Here's a typical Google Analytics tracking tag:
 
 Assuming some variation of the above tag already exists on the client site, the first thing we need to do is **remove** the following line of code:
 
-{% highlight html %}
+{% highlight js %}
   ga('send', 'pageview');
 {% endhighlight %}
 
 That line is what actually sends analytics data to the Google servers, so we're removing it to prevent anything from being sent to Google until the BKUUID can be inserted.
 
-Now, within BlueKai tag management, set up a tag to fire across **all client site pages** with the following settings:
+Now, within BlueKai tag management, set up a tag to fire across **all client site pages** with the following settings (you may need to change 'HTTP Type' according to the page protocol):
 
-![The BlueKai tag]({{ site.url }}/assets/ga_bk_tag.png)
+![The BlueKai tag]({{ site.url }}/assets/bk_ga_tag.png)
 
 This tag assigns the BlueKai universal user ID (BKUUID) to a variable called 'bkid' and then sends a *postMessage* to the BlueKai iframe's parent (which should be the main page itself) containing that variable.
 
@@ -81,3 +81,15 @@ The last thing we have to do to implement the Google Analytics tag is to set up 
 {% endhighlight %}
 
 This above code sets the value of a new 'custom dimension' (more on that [here](https://support.google.com/analytics/answer/2709828?hl=en)) to the BKUUID, then sends the page view data (which we'd earlier removed from the default Google Analytics tag code) to Google's servers.
+
+At this point we've successfully sent the BKUUID to Google Analytics on every page view. Now we need to get it back out. The first step is to go to your Google Analytics account, click on 'Admin' on the top menu bar, find your 'Property' on the resulting page, then click on 'Custom Definitions,' followed by 'Custom Dimensions.'
+
+On the next page, click on 'New Custom Dimension.' Give it a name like 'BK User ID Dimension,' change the Scope to 'User,' and make sure the box marked 'Active' is checked. Then hit 'Create.' Google Analytics will now save all incoming BlueKai UUIDs to this new dimension.
+
+To test the process for exporting this data from Google Analytics, go to Google's API tool, [Query Explorer](https://ga-dev-tools.appspot.com/query-explorer/). Sign in to your Google Analytics account, select the appropriate Property, and then set the query parameters as seen below:
+
+![The BlueKai tag]({{ site.url }}/assets/query_params.png)
+
+Finally, click on 'Run Query.' The results will display all BKUUIDs that have been captured, along with their number of sessions and session duration. More importantly, the page also displays the API query you would use to obtain this data in JSON format.
+
+Now that this data has been exported in machine-readable format, the final step is to place it into the BlueKai DMP via the [User Data API](https://kb.bluekai.com/display/PD/User+Data+API). (One important note: sending data to BlueKai APIs is a little tricky given the complicated authentication workflow. Click [here](https://kb.bluekai.com/display/PD/Programming+Example) for an example of how it works.)
