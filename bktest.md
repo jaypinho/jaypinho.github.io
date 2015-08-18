@@ -10,9 +10,8 @@ permalink: /bktest/
 bk_doJSTag(26881, 4);
 
 function receiveMessage(event) {
-  var bk_id = event.data;
   ga('set', '&uid', bk_id);
-  ga('set', 'dimension1', bk_id);
+  ga('set', 'dimension1', event.data);
   ga('send', 'pageview');
 }
 
