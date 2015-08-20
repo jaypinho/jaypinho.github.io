@@ -6,39 +6,82 @@ permalink: /bkdemo/
 ---
 <br>
 
-#### Objectives
+#### Sections
 
-1. Send BlueKai Universal User IDs (BKUUIDs) into the Google Analytics (GA) tag in order to associate page- and event-level data with BlueKai users.
+1. [Objectives](#step1)
 
-2. Export this Google Analytics data, tied to BKUUIDs, via the Google Analytics API.
+2. [Overview](#step2)
 
-3. Import the result into the BlueKai DMP via the User Data API.
+3. [Configuring the BlueKai tag](#step3)
 
----
-<br>
+4. [Configuring the Google Analytics tag code](#step4)
 
-#### Possible solutions
+5. [Configuring the Google Analytics account](#step5)
 
-There are at least three possible ways to achieve the above objectives.
+6. [Exporting data from Google Analytics](#step6)
 
-1. Configure the BlueKai container to fire tags *outside* of the iframe, thus allowing a Javascript variable containing the BKUUID to be accessible to the Google Analytics tag.  
+7. [Creating classification rules within BlueKai](#step7)
 
-2. Assume that both the Google Analytics tag and the BlueKai ID swap tag are both firing within some sort of external tag management system, such that the Google Analytics tag can access the BKUUID in a universal data layer or something similar.
-
-3. Implement *postMessage* and *receiveMessage* functions inside and outside the iframe, respectively, so that the BKUUID can be sent from within the BlueKai container iframe to the external Google Analytics tag.
-
-**Option 1** is possible but presents multiple challenges. First, it would require a redeployment of BlueKai container tags throughout the client site: allowing tags to fire outside of the BlueKai iframe is not the default setting, so changing this would require adding a line of code to the standard BlueKai tag code on client sites. Secondly, this option would also expose client sites to more vulnerability, given the ability to fire tags directly onto the page itself.
-
-**Option 2** may be possible but cannot be easily explored without access to various third-party tag management systems. Each implementation would differ depending on the tag management product being used, thus precluding the possibility of a universally applicable solution.
-
-**Option 3** is the simplest and most elegant of the three. No code needs to be modified on the BlueKai container iframe, thus sparing client IT departments from the headache of redeployment, and the Google Analytics tag only needs to be modified slightly. The only real downside is the potential to miss analytics data if the BlueKai tag fails to load properly (since the Google Analytics tag will need to wait for the BlueKai tag to load before firing).
-
-Thus we will proceed with **Option 3**.
+8. [Importing the analytics data into the DMP](#step8)
 
 ---
 <br>
 
-#### Instructions
+<a name="step1"></a>
+
+#### 1. Objectives
+
+- Send BlueKai Universal User IDs (BKUUIDs) into the Google Analytics (GA) tag in order to associate page- and event-level data with BlueKai users.
+
+- Export this Google Analytics data, tied to BKUUIDs, via the Google Analytics API.
+
+- Import the result into the BlueKai DMP via the User Data API.
+
+---
+<br>
+
+<a name="step2"></a>
+
+#### 2. Overview
+
+The simplest and most elegant way to achieve these objectives is to implement *postMessage* and *receiveMessage* functions inside and outside the BlueKai container iframe, respectively, so that the BKUUID can be sent from within the BlueKai container iframe to the external Google Analytics tag.
+
+No code needs to be modified on the BlueKai container iframe, thus sparing client IT departments from the headache of redeployment, and the Google Analytics tag only needs to be modified slightly. The only real downside is the potential to miss analytics data if the BlueKai tag fails to load properly (since the Google Analytics tag will need to wait for the BlueKai tag to load before firing).
+
+Let's begin.
+
+---
+<br>
+
+<a name="step3"></a>
+
+#### 3. Configuring the BlueKai tag
+
+Within your BlueKai account, navigate to tag management (in the menu bar as **Manage > Tags**) and set up a tag that will fire across **all client site pages**. (See our [Knowledge Base article](https://kb.bluekai.com/display/PD/Managing+Tags) for more information on how to set up tags and schedules.) The tag should contain the following settings (you may need to change 'HTTP Type' according to the page protocol):
+
+![The BlueKai tag]({{ site.url }}/assets/bk_ga_tag.png)
+
+As shown above, the tag code consists entirely of this:
+
+{% highlight html %}
+<script>
+
+  var bkid = '$_BK_UUID';
+  parent.postMessage(bkid, '*');
+
+</script>
+{% endhighlight %}
+
+This tag uses the **$_BK_UUID** macro to assign the BlueKai universal user ID (BKUUID) to a variable called **bkid**, and then sends a *postMessage* to the BlueKai iframe's parent (which should be the main page itself) containing that variable.
+
+Next we'll configure Google Analytics to pick up that message.
+
+---
+<br>
+
+<a name="step4"></a>
+
+#### 4. Configuring the Google Analytics tag code
 
 Here's a typical Google Analytics tracking tag:
 
@@ -62,15 +105,9 @@ Assuming some variation of the above tag already exists on the client site, the 
   ga('send', 'pageview');
 {% endhighlight %}
 
-That line is what actually sends analytics data to the Google servers, so we're removing it to prevent anything from being sent to Google until the BKUUID can be inserted.
+That line is what actually sends analytics data to the Google servers, so we're removing it to prevent anything from being sent to Google until the BKUUID can be inserted first.
 
-Now, within BlueKai tag management, set up a tag to fire across **all client site pages** with the following settings (you may need to change 'HTTP Type' according to the page protocol):
-
-![The BlueKai tag]({{ site.url }}/assets/bk_ga_tag.png)
-
-This tag assigns the BlueKai universal user ID (BKUUID) to a variable called 'bkid' and then sends a *postMessage* to the BlueKai iframe's parent (which should be the main page itself) containing that variable.
-
-The last thing we have to do to implement the Google Analytics tag is to set up a function on the page itself to listen for the *postMessage* and then insert the BKUUID into the Google Analytics call. We can do this as follows:
+Next, we have to set up a JavaScript function on the page itself to listen for the *postMessage* from the BlueKai iframe and then insert the BKUUID into the Google Analytics call. We can do this as follows:
 
 {% highlight js %}
   function receiveMessage(event) {
@@ -80,16 +117,56 @@ The last thing we have to do to implement the Google Analytics tag is to set up 
   addEventListener('message', receiveMessage, false);
 {% endhighlight %}
 
-This above code sets the value of a new 'custom dimension' (more on that [here](https://support.google.com/analytics/answer/2709828?hl=en)) to the BKUUID, then sends the page view data (which we'd earlier removed from the default Google Analytics tag code) to Google's servers.
+This above code sets the value of a new 'custom dimension' (more on that [here](https://support.google.com/analytics/answer/2709828?hl=en)) to the BKUUID, then sends the page view data (using the line of code we'd earlier removed from the default Google Analytics tag code) to Google's servers.
 
-At this point we've successfully sent the BKUUID to Google Analytics on every page view. Now we need to get it back out. The first step is to go to your Google Analytics account, click on 'Admin' on the top menu bar, find your 'Property' on the resulting page, then click on 'Custom Definitions,' followed by 'Custom Dimensions.'
+At this point we've successfully sent the BKUUID to Google Analytics on every page view. You can test this by loading any page containing the tag setup we've configured above. (Note: BLueKai tags take up to 1-2 hours to propagate, so you may need to wait for a bit before the BlueKai tag begins sending BKUUID data.) Here, for example, are the parameters sent to Google when its tag fires:
 
-On the next page, click on 'New Custom Dimension.' Give it a name like 'BK User ID Dimension,' change the Scope to 'User,' and make sure the box marked 'Active' is checked. Then hit 'Create.' Google Analytics will now save all incoming BlueKai UUIDs to this new dimension.
+![Parameters sent to Google Analytics]({{ site.url }}/assets/ga_params.png)
 
-To test the process for exporting this data from Google Analytics, go to Google's API tool, [Query Explorer](https://ga-dev-tools.appspot.com/query-explorer/). Sign in to your Google Analytics account, select the appropriate Property, and then set the query parameters as seen below:
+Notice the 'cd1' parameter second from the bottom? That's a 'custom dimension' containing the BlueKai ID received from the BlueKai tag.
 
-![The BlueKai tag]({{ site.url }}/assets/query_params.png)
+Now we need to ensure that your Google Analytics account is set up to store this custom dimension data.
 
-Finally, click on 'Run Query.' The results will display all BKUUIDs that have been captured, along with their number of sessions and session duration. More importantly, the page also displays the API query you would use to obtain this data in JSON format.
+---
+<br>
 
-Now that this data has been exported in machine-readable format, the final step is to place it into the BlueKai DMP via the [User Data API](https://kb.bluekai.com/display/PD/User+Data+API). (One important note: sending data to BlueKai APIs is a little tricky given the complicated authentication workflow. Click [here](https://kb.bluekai.com/display/PD/Programming+Example) for an example of how it works.)
+<a name="step5"></a>
+
+#### 5. Configuring the Google Analytics account
+
+The first step is to go to your Google Analytics account and click on 'Admin' on the top menu bar. On the resulting page, find your 'Property' (which is likely the middle one of three columns on the page), click on 'Custom Definitions,' and then select 'Custom Dimensions.'
+
+![Google Analytics custom dimensions]({{ site.url }}/assets/custom_dimension.png)
+
+On the resulting page, click on 'New Custom Dimension.' Give it a name like 'BK User ID Dimension,' change the Scope to 'User,' and make sure the box marked 'Active' is checked. Then hit 'Create.' Google Analytics will now save all incoming BlueKai UUIDs to this new dimension.
+
+(Important note: if this is *not* your first custom dimension for this property, you need to check to ensure that the tag code we set up earlier matches the index of the dimension you just created. If it doesn't, that tag code -- <code>ga('set', 'dimension1', event.data);</code> -- needs to be revised to reflect 'dimension3' or whatever the new index is.)
+
+---
+<br>
+
+<a name="step6"></a>
+
+#### 6. Exporting data from Google Analytics
+
+To test the process for exporting this data from Google Analytics, go to Google's API tool, [Query Explorer](https://ga-dev-tools.appspot.com/query-explorer/). Sign in to your Google Analytics account, select the appropriate Property, and then set the query parameters you'd like to export, as seen below:
+
+![Google's Query Explorer]({{ site.url }}/assets/query_params.png)
+
+Finally, click on 'Run Query.' The results will display all BKUUIDs that have been captured, along with their number of sessions and session duration (assuming you used the same metrics as in the above screenshot). More importantly, the page also displays the API query you would use to obtain this data in JSON format.
+
+---
+<br>
+
+<a name="step7"></a>
+
+#### 7. Creating classification rules within BlueKai
+
+---
+<br>
+
+<a name="step8"></a>
+
+#### 8. Importing the analytics data into the DMP
+
+Now that the Google Analytics data has been exported in machine-readable format and BlueKai categories and rules have been created to receive this new data, the final step is to import the data into the BlueKai DMP. This is done via the User Data API. Overall documentation is [here](https://kb.bluekai.com/display/PD/User+Data+API), but you can also find a [programming example](https://kb.bluekai.com/display/PD/Programming+Example) for constructing an API call, as well as additional details on the [authentication workflow](https://kb.bluekai.com/display/PD/Authenticating+BlueKai+API+Calls).
