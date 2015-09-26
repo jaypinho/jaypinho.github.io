@@ -64,7 +64,7 @@ In no particular order, the report's authors emphasized the following:
 
 - **Users are not unambiguously consenting, either:** Without being able to satisfy Belgian regulators that data processing is necessary to fulfill a contract, Facebook must rely on Article 5's option A: 'The data subject has unambiguously given his consent.' In 2011, an [EU Data Protection Working Party document](http://ec.europa.eu/justice/policies/privacy/docs/wpdocs/2011/wp187_en.pdf) (p. 35) defined the elements of valid consent as 'freely given,' 'specific,' 'informed,' and 'unambiguous.'<br><br>Belgium argues that Facebook violates the 'freely given' standard in two ways:
 
-    - Facbook occupies the 'dominant position on the market of social networks. One of the most important reasons to register on Facebook is exactly because "everybody is already on Facebook".'
+    - Facebook occupies the 'dominant position on the market of social networks. One of the most important reasons to register on Facebook is exactly because "everybody is already on Facebook".'
     - Users cannot meaingfully choose what data processing they will allow. 'It is not possible, for example, to only grant consent for Facebook's basic functions (e.g. sharing information with your friends), without also granting consent to the processing of your data for commercial profiling.'
     <br><br>
 
