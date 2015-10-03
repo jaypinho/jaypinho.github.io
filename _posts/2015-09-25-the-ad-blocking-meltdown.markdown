@@ -1,6 +1,6 @@
 ---
 title:  The ad-blocking meltdown
-excerpt: Ad-tech insiders do not sound like fans of consumer empowerment.
+excerpt: Ad tech insiders do not sound like fans of consumer empowerment.
 date:   2015-09-25 20:40:00
 tags: online advertising ad tech ad-blocking
 ---
