@@ -1,7 +1,7 @@
 ---
 title:  Too much of a bad thing
 excerpt: Lost amidst the ad-blocking furor is the larger, and simpler, problem.
-date:   2015-10-31 13:30:00
+date:   2015-10-31 15:14:00
 tags: online advertising journalism news content
 ---
 Imagine, for a moment, that you're an alien who's been invited to Planet Earth to observe humanity. During a tour showcasing our species' greatest achievements (the pyramids, deep-dish pizza, and so on), you are finally shown to a room with a computer.
