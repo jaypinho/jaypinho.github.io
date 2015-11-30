@@ -1,0 +1,20 @@
+- title: The Fed Project
+  twitter_username: TheFedProject
+  url: http://www.fedproject.com
+  description: A web site that graphs the Federal Reserve's interest rate projections over time and compares them to the actual rate and projections in other timeframes. Your one-stop shop for Federal Reserve interest rate projections and statements.
+
+- title: SCOTUS Search
+  cocreator: Victoria Kwan
+  twitter_username: SCOTUSSearch
+  url: http://www.scotussearch.com
+  description: The only free, searchable online database of United States Supreme Court oral argument transcripts dating back to the 1950s -- a total of over 1.4 million individual statements. Built with Ruby on Rails and PostgreSQL. Currently in beta.
+
+- title: SCOTUS Map
+  cocreator: Victoria Kwan
+  twitter_username: SCOTUSMap
+  url: http://www.scotusmap.com
+  description: Launched in July 2014, SCOTUS Map remains the definitive resource for tracking United States Supreme Court justices' public engagements. Built with Ruby on Rails.
+
+- title: Link Fixer
+  url: http://linkfixer.herokuapp.com
+  description: A mini-app, created with Ruby on Rails, that processes CSV-formatted URL lists, pings each one, and returns the HTTP code, final redirect, and other data.
