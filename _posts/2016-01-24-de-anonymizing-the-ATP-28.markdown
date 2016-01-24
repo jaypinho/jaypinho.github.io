@@ -62,7 +62,7 @@ The first order of business is to organize the Buzzfeed dataset in a way that al
 
 4. Copy the pivot table data (including header row, but excluding grand totals row) into a new worksheet:
 
-    ![Pivot table settings]({{ site.url }}/assets/tennis2.png)
+    ![New worksheet]({{ site.url }}/assets/tennis2.png)
 
 5. Return to the pivot table worksheet and replace 'winner' with 'loser' in the 'Rows' section of the PivotTable Builder:
 
@@ -70,19 +70,19 @@ The first order of business is to organize the Buzzfeed dataset in a way that al
 
 6. Copy the pivot table data (*excluding* both header row and grand totals row this time) to the other worksheet, just below the last row of your previously copied 'winner' data:
 
-    ![Pivot table settings]({{ site.url }}/assets/tennis4.png)
+    ![Copied data rows]({{ site.url }}/assets/tennis4.png)
 
 7. For the new 'loser' rows just copied over, move all columns except for the first one (column A, which contains the loser player IDs) to the right, so the leftmost column is one column to the right of all the 'winner' columns above:
 
-    ![Pivot table settings]({{ site.url }}/assets/tennis5.png)
+    ![Moving the columns]({{ site.url }}/assets/tennis5.png)
 
 8. Go back to the top and copy over the group of year column headers to the right, so there are two consecutive groups of columns for the years 2009-2015. Prefix the first group with 'W' for 'winner' and the second group with 'L' for 'loser':
 
-    ![Pivot table settings]({{ site.url }}/assets/tennis6.png)
+    ![Copying the column headers]({{ site.url }}/assets/tennis6.png)
 
 9. Copy the [list of 28 anonymized players](https://github.com/BuzzFeedNews/2016-01-tennis-betting-analysis/blob/master/notebooks/tennis-analysis.ipynb) named in the TIU report from the Buzzfeed GitHub repository to a new worksheet. In Excel, hit Edit > Find > Replace, and run Replace All (separately) on the `'`, `[space]`, and `,` characters to replace them with empty text:
 
-    ![Pivot table settings]({{ site.url }}/assets/tennis8.png)
+    ![Formatting the list of 28]({{ site.url }}/assets/tennis8.png)
 
 10. Go back to the worksheet from step 8 and add another column, column P, to the right of all the existing ones, called 'Named in Report?' Then enter the following formula in cell P2:
 
@@ -91,11 +91,11 @@ The first order of business is to organize the Buzzfeed dataset in a way that al
     Be sure to change 'Sheet5' (if necessary) to whichever sheet holds the 28 anonymized IDs from the prior step. This formula copies the anonymized ID to the cell if it matches the current row, and leaves it blank if not.
 
     Finally, apply this formula (by dragging or copy/pasting) to column P for all rows. Make sure the first part, 'A2', increases (to 'A3', 'A4', etc.) as the row numbers increase. The formula's reference to the other sheet that contains the 28 IDs, however, should not increase:
-    ![Pivot table settings]({{ site.url }}/assets/tennis9.png)
+    ![Identifying IDs in the 2008 report]({{ site.url }}/assets/tennis9.png)
 
 11. Select all data (columns A through P, and all rows) and create a new pivot table with the following settings:
 
-    ![Pivot table settings]({{ site.url }}/assets/tennis7.png)
+    ![Filtering for IDs in the report]({{ site.url }}/assets/tennis7.png)
 
     Note that the 'Values' section of the PivotTable Builder has been set to sums, not counts. I've also sorted the pivot table by wins, from most to least. Most importantly, I've included 'Named in Report?' to the 'Filters' section of the PivotTable Builder and unchecked the box for blank rows, which filters out all players who *weren't* named in the 2008 report. I now have a table of anonymized players who were named in the report, sorted by wins for the year 2009.
 
@@ -109,13 +109,13 @@ The first order of business is to organize the Buzzfeed dataset in a way that al
 
 2. The repository contains many data files. Start by opening the one titled 'atp_matches_qual_chall_2009.csv', which contains 'tour-level qualifying and challenger main-draw matches' for 2009. Insert a new column to the left of the leftmost one ('tourney_id') and call it 'year' in cell A1. In the first data cell in that column (cell A2), type '2009', then click and drag (or copy/paste) that value all the way down the column. Make sure it copies '2009' and doesn't increment it.
 
-    ![Pivot table settings]({{ site.url }}/assets/tennis11.png)
+    ![Adding a year column]({{ site.url }}/assets/tennis11.png)
 
 3. Next, open 'atp_matches_qual_chall_2010.csv'. Copy all rows (except the header row) to the bottom of the 'atp_matches_qual_chall_2009.csv' file, just below the last row. Be sure the leftmost column of the copied data lines up with column B now, to match up the column data from both years. Then find the topmost row of the data you just copied over, type '2010' in column A, and drag down again. Repeat this process for all years through 2015.
 
 4. In Excel, hit Sort & Filter > Filter, then select the 'tourney_date' header and de-select all dates after September 24, 2015 (to match the Buzzfeed data, [as explained by John Templon](https://github.com/BuzzFeedNews/2016-01-tennis-betting-analysis/issues/3)):
 
-    ![Pivot table settings]({{ site.url }}/assets/tennis12.png)
+    ![Filtering out later match dates]({{ site.url }}/assets/tennis12.png)
 
 5. Select the entire filtered table, including header row, and copy it to a new sheet. Then delete the original sheet so only the new sheet remains, with all matches from the start of 2009 through September 24, 2015.
 
@@ -141,7 +141,7 @@ Keep in mind that, in many cases, the data won't match up precisely, as Buzzfeed
 
 1. Let's begin by copying over the data from each of the pivot tables from those two files into separate worksheets within the same new workbook. Make sure to include the header row and table data, but not the grand total row at the bottom. The copied data should not be a pivot table, but it should include the same data. Here, for example, is how the anonymized IDs worksheet should roughly look:
 
-    ![Pivot table settings]({{ site.url }}/assets/tennis15.png)
+    ![Anonymized IDs worksheet]({{ site.url }}/assets/tennis15.png)
 
 2. Notice that the Buzzfeed data only includes 17 IDs, not 28. This is because only 17 of the 28 players named in the 2008 ATP report played in any of the roughly 26,000 matches Buzzfeed selected from OddsPortal.com. For each of these 17 IDs, we're going to calculate the RMSE for each season's wins and losses as compared to all 2,328 named players in the ATP data.
 
@@ -167,7 +167,7 @@ Keep in mind that, in many cases, the data won't match up precisely, as Buzzfeed
 
       Now, on the worksheet with ATP data, we'll want to add new column headers (to the right of the named players' win-loss data) for each of the 10 IDs. It will look something like this:
 
-      ![Pivot table settings]({{ site.url }}/assets/tennis16.png)
+      ![New column headers]({{ site.url }}/assets/tennis16.png)
 
       Now, here's the Excel formula I used to calculate the root mean square error (in cell P2 in the above screenshot):
 
@@ -177,7 +177,7 @@ Keep in mind that, in many cases, the data won't match up precisely, as Buzzfeed
 
       I constructed the formula to be draggable: that is, you can drag both rightward (to analyze other anonymized IDs) and downward (to analyze other named players). This will quickly generate thousands of RMSE calculations on the spot (although it will be fewer than the 39,576 mentioned above, because we've eliminated 7 IDs from the comparison):
 
-      ![Pivot table settings]({{ site.url }}/assets/tennis17.png)
+      ![RMSE calculations]({{ site.url }}/assets/tennis17.png)
 
   4. The last step is just to select all of those newly calculated cells, copy them, and then use Edit > Paste Special to paste them **as values** in the same place. This gets rids of the formulas and replaces them with actual numbers. Once this is complete, you can use the Sort & Filter command on any of the 10 anonymized ID columns in order to sort from smallest to largest RMSE. You now have the best guesses for who these anonymized IDs actually are. Below is the list of 10, along with the three closest guesses (RMSE value in parentheses):
 
@@ -214,7 +214,7 @@ As you can see, these records match up quite closely. Take a look at 2009: the a
 
 #### Important dataset caveats
 
-It's worth noting that, lacking an exact copy of the OddsPortal data Buzzfeed used, I had to compare their anonymized dataset with a completely separate dataset (the Jeff Sackmann repository). This necessarily introduces discrepancies and reduces accuracy.
+It's worth noting that, since Buzzfeed only released an anonymized version of the OddsPortal data they used, I had to compare that anonymized dataset with a completely separate one (the Jeff Sackmann repository). This necessarily introduces discrepancies and reduces accuracy.
 
 In [the **Show Legend** post](http://showlegend.tumblr.com/post/137644525409/the-buzzfeed-15-exposed) referenced earlier, Chris Bol (who is a far better data scraper than I) was able to pull the OddsPortal data that Buzzfeed used to build their dataset. Even working off what should be the same data that Buzzfeed had, he had to leave off the years 2009 and 2010 because of apparent discrepancies between the dataset he generated and the one Buzzfeed generated. Nevertheless, a follow-up analysis of the anonymized IDs using his dataset, instead of Jeff Sackmann's, would probably result in a cleaner comparison.
 
