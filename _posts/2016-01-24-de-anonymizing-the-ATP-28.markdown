@@ -214,11 +214,11 @@ As you can see, these records match up quite closely. Take a look at 2009: the a
 
 #### Important dataset caveats
 
-It's worth noting that, since Buzzfeed only released an anonymized version of the OddsPortal data they used, I had to compare that anonymized dataset with a completely separate one (the Jeff Sackmann repository). This necessarily introduces discrepancies and reduces accuracy.
+It's worth noting that, since Buzzfeed only released an anonymized version of the OddsPortal data they used, I had to compare that anonymized dataset with a completely separate one (the Jeff Sackmann repository). This necessarily introduces discrepancies and reduces accuracy -- especially given Buzzfeed's methodology, which only counted matches with odds from specific bookmakers.
 
 Along the same vein, the RMSE is heavily skewed for players with little data. This is why I eliminated 7 IDs right off the bat: with so little data, the RMSE is artificially low because no errors are counted in years when data doesn't exist for both the player and the anonymized ID. That doesn't necessarily mean that the match is incorrect: it's possible the player and the anonymized ID are in fact the same person, and he simply didn't play in any of those years in which we have no data. But without further investigation it's difficult to know for certain, so I've excluded them out of caution.
 
-Finally, this almost goes without saying, but the above list represents players who are *possibly* named in the 2008 ATP report, based on their W-L records. It does not constitute proof that they are actually guilty of match-fixing. Indeed, it doesn't even prove that they're in the report -- although in certain cases, like Richard Gasquet, Albert Montanes, and so on, it appears highly likely.
+Finally, this almost goes without saying, but the above list represents players who are *possibly* named in the 2008 ATP report, based on their W-L records. It does not constitute proof that they are actually guilty of match-fixing. Indeed, it doesn't even prove that they're in the report -- although in certain cases, like Richard Gasquet, Albert Montanes, and so on, it appears highly likely. All of this, of course, assumes Buzzfeed correctly identified the players in the report. It would be surprising if that were *not* the case (since the names were leaked to them), but it's worth mentioning.
 
 #### Anonymity is the new fame
 
