@@ -1,0 +1,34 @@
+---
+title:  BuzzKill
+excerpt: You can probably guess what this is about.
+date:   2016-04-13 01:40:00
+tags: journalism media buzzfeed advertising
+---
+*Anyone who purposefully goes to make a publication putting content as a secondary thing to the business model will end up making shit, generally.* - [Brian Lam](http://observer.com/2016/04/meet-the-man-who-rejected-advertising-and-still-runs-a-profitable-media-site/)
+
+Brian Lam, founder of *The Wirecutter*, was referring to shit content. But he just as easily could have been referencing the shit business model, as [reported by *Financial Times*](http://www.ft.com/intl/cms/s/0/26ebf992-00c4-11e6-99cb-83242733f755.html#axzz45dtKYXTg) yesterday:
+
+> BuzzFeed missed its revenue target for 2015 and has slashed its internal projections for 2016 by about half, raising questions about whether the online news and entertainment network can meet the sky-high valuations put on new media groups by investors.
+>
+> The company, known for its lists, irreverent content and fast-growing editorial operation, had projected about $250m in revenues for 2015 but generated less than $170m, according to three people with knowledge of the situation.
+>
+> The company has halved its internal revenue target for 2016 from $500m to $250m, the people said.
+
+I've written about this before ([here]({% post_url 2015-10-31-too-much-of-a-bad-thing %}) and [here]({% post_url 2016-01-04-about-that-new-media-business-model %}), for example), but it's worth repeating: bad content and bad business go together. (And this is certainly [not a problem limited to BuzzFeed](http://www.vox.com/) -- whose chairman, it should be mentioned, [denies that the revenue forecast was changed](http://recode.net/2016/04/12/buzzfeed-revenue-advertising-2016-facebook/).) It may take some time before this dawns on VCs, but that doesn't make it any less true. Again from *FT*:
+
+> It has also earned plaudits for the quality of its journalism at a time of declining newspaper readership and shown a knack for finding and packaging content that online audiences want to share and discuss. A video stream of two BuzzFeed staff wrapping rubber bands around a watermelon until it exploded was streamed live by 800,000 people last week.
+>
+> However, people with knowledge of the company’s operations have expressed concern that its business model, which involves creating custom content for brands, is not scalable. “It takes too long to do each campaign, and you can only do so many,” one person said.
+
+I mean, who would've imagined that a publisher with a Greatest Hits reel headlined by combustible fruit<sup>1</sup> would have trouble attracting sustainable revenue?
+
+Brian Lam's [*The Wirecutter*](http://thewirecutter.com/) serves as a perfect example of a viable alternative. So does Ben Thompson's [*Stratechery*](https://stratechery.com/). Or, for that matter, any other clickbait-rejecting, tangibly valuable content publishers.
+
+This isn't rocket science: it's journalism. Stop building content mills to the gods of CPM and start writing about things you're passionate about. At best, you'll also make some money. At worst, you won't while away your mid–career compiling [photo essays](http://www.businessinsider.com/how-to-fly-first-class-for-price-of-coach-2014-12?op=1) on how to avoid inadvertent splashing at airport urinals.
+
+The state of journalism is probably best encapsulated, however, by *Re/Code*. In reporting on *FT*'s reporting (journalism!), *Re/Code* bagged [an anonymous description](http://recode.net/2016/04/12/buzzfeed-revenue-advertising-2016-facebook/) of *BuzzFeed*'s predicament: "They're driving in the dark at 60 miles an hour, without headlights. But that's better than standing still."
+
+It...it *is?*
+
+<p>&nbsp;</p>
+<small><sup>1</sup>*Sponsored by Fruit Loops, one hopes.*</small>
