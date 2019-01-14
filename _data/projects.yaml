@@ -1,3 +1,14 @@
+- title: SCOTUS Map
+  cocreator: Victoria Kwan
+  twitter_username: SCOTUSMap
+  url: http://www.scotusmap.com
+  description: Launched in July 2014, SCOTUS Map remains the definitive resource for tracking United States Supreme Court justices' public engagements. Built with Ruby on Rails.
+
+- title: SCOTUS Watch
+  cocreator: Victoria Kwan
+  url: http://www.scotuswat.ch
+  description: Launched in July 2018, SCOTUS Watch tracked U.S. senators' public statements on then-Supreme Court nominee Brett Kavanaugh.  
+
 - title: The Fed Project
   twitter_username: TheFedProject
   url: http://www.fedproject.com
@@ -8,12 +19,6 @@
   twitter_username: SCOTUSSearch
   url: http://www.scotussearch.com
   description: The only free, searchable online database of United States Supreme Court oral argument transcripts dating back to the 1950s -- a total of over 1.4 million individual statements. Built with Ruby on Rails and PostgreSQL. Currently in beta.
-
-- title: SCOTUS Map
-  cocreator: Victoria Kwan
-  twitter_username: SCOTUSMap
-  url: http://www.scotusmap.com
-  description: Launched in July 2014, SCOTUS Map remains the definitive resource for tracking United States Supreme Court justices' public engagements. Built with Ruby on Rails.
 
 - title: Link Fixer
   url: http://linkfixer.herokuapp.com
