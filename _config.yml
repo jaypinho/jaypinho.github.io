@@ -9,7 +9,7 @@ permalink: /:year/:month/:day/:title/
 twitter_username: jaypinho
 github_username:  jaypinho
 timezone: America/New_York
-gems: [jekyll-paginate]
+plugins: [jekyll-paginate]
 paginate: 5
 defaults:
   -
