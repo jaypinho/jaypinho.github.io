@@ -3,7 +3,7 @@ layout: page
 title: Publications
 permalink: /publications/
 ---
-Below is a chronologically ordered list of my published pieces.
+Below is a chronologically ordered list of my published pieces, in addition to [my current newsletter](https://networked.substack.com/) and [old blog]({% link index.html %}).
 
 <ul>
 {% for pub in site.data.publications %}
