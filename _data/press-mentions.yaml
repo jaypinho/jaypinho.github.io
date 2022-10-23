@@ -1,0 +1,47 @@
+- title: "More than 250,000 fake Apple jobs yanked from LinkedIn to fight pro spam"
+  publisher: iMore
+  date: 2022-10-21
+  link: https://www.imore.com/apple/more-than-250000-fake-apple-jobs-yanked-from-linkedin-to-fight-pro-spam
+  excerpt: "According to numbers collected by developer Jay Pinho(opens in new tab) and shared with Krebs On Security, LinkedIn purged the accounts between 11:06 am and 11:02 pm on October 10. There were previously more than 576,000 accounts claiming to work for Apple, while the number fell to just 285,000.<br><br>It was a similar story for Amazon, also on the same day. The previous number of 1.2 million employees fell to less than 840,000 within a matter of hours. While LinkedIn isn't admitting that it deleted fake accounts, the fact that both of these numbers fell at the same time suggests something was done. Neither Apple nor Amazon commented when asked to by Krebs on Security. LinkedIn simply said that it constantly works to clear out fake accounts."
+
+- title: "Apple, Amazon Employee Profiles See Massive Purge On LinkedIn — It's Not What You Think"
+  publisher: Benzinga
+  date: 2022-10-21
+  link: https://www.benzinga.com/news/22/10/29354758/apple-amazon-employee-profiles-see-massive-purge-on-linkedin-its-not-what-you-think
+  excerpt: "A developer, Jay Pinho, who has been using LinkedIn to track the number of employees at various organizations daily, noticed last week that Apple and Amazon had significantly fewer people claiming to work for them than they did 24 hours earlier. Pinho also shared screenshots showing the Oct. 10 overnight decrease in personnel."
+
+- title: "Nearly 600,000 people on LinkedIn listed Apple as their employer on one day in October. The next day, half the profiles disappeared as the platform cracks down on fake accounts."
+  publisher: Business Insider
+  date: 2022-10-20
+  link: https://www.businessinsider.com/linkedin-fake-account-problem-apple-amazon-profiles-company-cracking-down-2022-10
+  excerpt: "Jay Pinho, a developer who tracks data on the professional networking site, was the first to spot plummeting employee numbers at Apple and Amazon. He shared his findings with Krebs on Security, a cybersecurity blog.<br><br>On October 10, 576,562 LinkedIn accounts listed Apple as their current employer. The next day, there were less than 285,000, Pinho found.<br><br>Pinho said a similar scenario happened with Amazon, which saw a 33% drop in its employee headcount on LinkedIn."
+
+- title: "Battle with Bots Prompts Mass Purge of Amazon, Apple Employee Accounts on LinkedIn"
+  publisher: Krebs on Security
+  date: 2022-10-20
+  link: https://krebsonsecurity.com/2022/10/battle-with-bots-prompts-mass-purge-of-amazon-apple-employee-accounts-on-linkedin/
+  excerpt: "Jay Pinho is a developer who is working on a product that tracks company data, including hiring. Pinho has been using LinkedIn to monitor daily employee headcounts at several dozen large organizations, and last week he noticed that two of them had far fewer people claiming to work for them than they did just 24 hours previously."
+
+- title: "These Fake Local News Sites Have Confused People For Years. We Found Out Who Created Them."
+  publisher: BuzzFeed News
+  date: 2020-02-06
+  link: https://www.buzzfeednews.com/article/craigsilverman/these-fake-local-news-sites-have-confused-people-for-years
+  excerpt: "Regardless of what Paulson may do, McGorty's sites have already done damage. Pinho said the experience of piecing the network caused him to question whether Google was properly moderating what it inputted into Google News.<br><br>“It's pretty crazy to have to wade through months- or years-old pieces plagiarized from other news sources in an email service provided by a company whose mission is ostensibly to organize the world's information,” he said."
+
+- title: "Justices Get Out More, but Calendars Aren’t Open to Just Anyone"
+  publisher: New York Times
+  date: 2015-06-01
+  link: https://www.nytimes.com/2015/06/02/us/politics/justices-get-out-more-but-calendars-arent-open-to-just-anyone.html
+  excerpt: "Tracking the public appearances of the justices is surprisingly hard. They are public officials and public figures, and they seem to like the acclaim and influence that come from appearances before friendly audiences. But many of them appear wary of more general public scrutiny.<br><br>“The court does not release the justices’ speaking schedules ahead of time and only posts transcripts of the appearances on the court website if the justice volunteers them,” said Ms. Kwan, who founded Scotus Map along with Jay Pinho. “We are under no illusion that we have compiled all of the events out there.”"
+
+- title: "Justices rock on the road, if you can find them"
+  publisher: USA Today
+  date: 2014-12-26
+  link: https://eu.usatoday.com/story/news/politics/2014/12/26/supreme-court-scalia-kagan-travel-speeches/20267589/
+  excerpt: "In an effort to help both the media and the general public keep up with the justices' schedules, which are not publicized by the court, two 20-something New Yorkers this year created a web site and dubbed it, appropriately, SCOTUS Map.<br><br>Combining Victoria Kwan's infatuation with the high court and Jay Pinho's knowledge of computer code, the couple pinpoints past and future appearances by justices on a map of the world."
+
+- title: "'X' Marks the Spot: On The Road With The Justices"
+  publisher: Law.com
+  date: 2014-07-30
+  link: https://www.law.com/supremecourtbrief/almID/1202665268153/
+  excerpt: "It’s 5 p.m. on July 30, 2014. Do you know where your Supreme Court justices are? Victoria Kwan and Jay Pinho probably do.<br><br>Put together a law school grad with a passion for the Supreme Court and a budding techie with an insatiable appetite for public policy and the result is SCOTUS Map, an interactive guide to where sitting and retired justices have speaking engagements this summer and fall."
